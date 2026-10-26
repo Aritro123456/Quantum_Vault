@@ -1,0 +1,10 @@
+[project]
+name = "quantum-vault"
+version = "0.1.0"
+description = "Post-quantum secure file exchange and cryptographic migration lab"
+requires-python = ">=3.11"
+dependencies = ["cryptography==50.0.2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

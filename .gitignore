@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+runtime/*
+!runtime/.gitkeep
+benchmarks/results/*
+!benchmarks/results/.gitkeep
+reports/generated/*
+!reports/generated/.gitkeep
+
+# Dashboard build and local state
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/*.tsbuildinfo
+backend/*.sqlite3
+
+# Publish only the selected public baseline measurement artifacts
+!benchmarks/results/initial-comparison/
+benchmarks/results/initial-comparison/*
+!benchmarks/results/initial-comparison/results.json
+!benchmarks/results/initial-comparison/summary.csv
+!benchmarks/results/initial-comparison/report.md
